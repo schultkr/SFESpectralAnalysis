@@ -8,7 +8,7 @@ Name of QuantLet: SFESpecWN
 
 Published in: Statistics of Financial Markets
 
-Description: 'SFESpecWN computes the spectrum (frequency domain representation) of a white noise process'
+Description: 'Computes the spectrum (frequency domain representation) of a white noise process'
 
 Keywords: time series, spectrum, simulation, signal, plot, spectral analysis, White Noise
 

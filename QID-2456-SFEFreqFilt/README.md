@@ -25,8 +25,7 @@ Output: Two plots for the time and frequency domain of the Southern Oscillation 
 ```
 
 ![Picture1](FrequencyDomain.png)
-![Picture2](SignalSim.png)
-![Picture3](TimeDomain.png)
+![Picture2](TimeDomain.png)
 
 ```r
 # install and load packages

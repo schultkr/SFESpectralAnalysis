@@ -20,7 +20,7 @@ Submitted: Mon, May 09 2016 by Christoph Schult
 
 Input: Data for the Southern Oscillation Index from the package astsa.
 
-Output: Two plots for the acf and pacf of the Southern Oscillation Index. Furthermore one plot for the time and one for the frequency domain of the SOI.
+Output: 'Two plots for the acf and pacf of the Southern Oscillation Index. Furthermore one plot for the time and one for the frequency domain of the SOI.'
 
 ```
 

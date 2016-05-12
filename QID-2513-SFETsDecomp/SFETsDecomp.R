@@ -2,7 +2,7 @@
 par(mfrow = c(2, 1), mar = c(4, 4.5, 1, 3) + 0.1, mgp = c(2.5, 1, 0))
 
 # create different time series
-t = (1:1000) / 10
+t  = (1:1000) / 10
 x1 = 2 * cos(2 * pi * t * 4 / 100) + 3 * sin(2 * pi * t * 4 / 100)
 x2 = 4 * cos(2 * pi * t * 10 / 100) + 5 * sin(2 * pi * t * 10 / 100)
 x3 = 6 * cos(2 * pi * t * 40 / 100) + 7 * sin(2 * pi * t * 40 / 100)

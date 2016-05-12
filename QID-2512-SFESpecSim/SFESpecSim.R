@@ -62,8 +62,8 @@ lines(l$spec ~ l$freq, type = "l", lwd = 2, col = "darkgreen")
 
 # MA(1) processes
 theta1 = 0.9   # parameter of MA(1)
-x    = arima.sim(n = n,model = list(ma = theta1), rand.gen = function(n, ...) rnorm(n, 0, sigma)) # simulate process
-l    = ARMAspec(model = list(ma = c(theta1)), plot = FALSE) # compute theoretical spectral density
+x      = arima.sim(n = n,model = list(ma = theta1), rand.gen = function(n, ...) rnorm(n, 0, sigma)) # simulate process
+l      = ARMAspec(model = list(ma = c(theta1)), plot = FALSE) # compute theoretical spectral density
 
 # create plot for MA(1) process wiith theta1 = 0.9
 plot(x, type = "l", xlab = "time", ylab = expression(X[t]), lwd = 2, cex.axis = 0.8, cex.lab = 0.9)
@@ -82,10 +82,10 @@ spec.pgram(x, log = "no", xlab = "frequency", ylab = "spectrum", main = "", sub 
 lines(l$spec ~ l$freq, type = "l", lwd = 2, col = "darkgreen")
 
 # SAR(1) process
-phi1   = 0.5
-PHI1   = 0.5    # Reset theta for Seasonal AR
-l      = ARMAspec(model=list(ar = phi1, seasonal = list(sar = PHI1, period = 12)), col = "magenta3", lwd = 3, cex.axis = 0.8, cex.lab = 0.9, plot = FALSE)
-x      = arima.sim(n = n,model = list(ar = phi1, seasonal = list(sar = PHI1, period = 12)), rand.gen=function(n, ...) rnorm(n, 0, sigma))
+phi1 = 0.5
+PHI1 = 0.5    # Reset theta for Seasonal AR
+l    = ARMAspec(model=list(ar = phi1, seasonal = list(sar = PHI1, period = 12)), col = "magenta3", lwd = 3, cex.axis = 0.8, cex.lab = 0.9, plot = FALSE)
+x    = arima.sim(n = n,model = list(ar = phi1, seasonal = list(sar = PHI1, period = 12)), rand.gen=function(n, ...) rnorm(n, 0, sigma))
 
 # create plot for SAR(1) process wiith phi1 = 0.5
 plot(x, type = "l", xlab = "time", ylab = expression(X[t]), lwd = 2)
